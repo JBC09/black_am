@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto%20Sans%20KR%3Aital%2Cwght%400%2C100..900&directory=3&display=block");
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Noto Sans KR";
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 30vw;
+        min-width: 300px;
+      }
+
+      h1 {
+        color: #272727;
+        text-align: center;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      input,
+      select {
+        border-radius: 3px;
+        outline: none;
+        border: 1px solid #ddd;
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 13px;
+        box-sizing: border-box;
+        transition: 0.35s;
+      }
+      input:focus,
+      select:focus {
+        border: 1px solid #7367f0;
+      }
+
+      p {
+        text-align: center;
+        box-sizing: border-box;
+        width: 100%;
+        background-color: #7367f0;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 10px;
+        transition: 0.35s;
+      }
+      p:nth-of-type(2) {
+        color: #272727;
+        background-color: gold;
+      }
+      p:hover {
+        opacity: 0.9;
+        font-weight: bold;
+      }
+      #flex {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #bank_div {
+        width: 35%;
+      }
+
+      #account_div {
+        width: 60%;
+      }
+
+      @media (max-width: 600px) {
+        form {
+          width: 80vw;
+        }
+      }
+    </style>
+    <title>Personal Information Form</title>
+  </head>
+  <body>
+    <form>
+      <h1>블랙등록</h1>
+      <label for="name">이름</label>
+      <input type="text" id="name" name="name" placeholder="홍길동" />
+
+      <label for="id">아이디</label>
+      <input type="text" id="id" name="id" />
+
+      <label for="phone">핸드폰 번호</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+        placeholder="010-1234-5678"
+      />
+
+      <div id="flex">
+        <div id="bank_div">
+          <label for="bank">은행명</label>
+          <input type="text" id="bank" name="bank" />
+        </div>
+        <div id="account_div">
+          <label for="account">계좌번호</label>
+          <input type="text" id="account" name="account" />
+        </div>
+      </div>
+
+      <label for="ip">아이피</label>
+      <input type="text" id="ip" name="ip" placeholder="127.0.0.1" />
+
+      <label for="content">키워드</label>
+
+      <select name="content" id="content">
+        <option value="통장협박•계좌신고">통장협박•계좌신고</option>
+        <option value="양빵">양빵</option>
+        <option value="작업베팅">작업베팅</option>
+        <option value="배당하락">배당하락</option>
+        <option value="3자사기">3자사기</option>
+        <option value="해킹(프로그램)">해킹(프로그램)</option>
+        <option value="꽁머니충">꽁머니충</option>
+      </select>
+
+      <p id="post">제출</p>
+      <p onclick="location.href='./index.html'">돌아가기</p>
+
+      <script>
+        const _0x4d5e83 = _0x2a25;
+        (function (_0x5646a8, _0x1a758b) {
+          const _0x407803 = _0x2a25,
+            _0x465011 = _0x5646a8();
+          while (!![]) {
+            try {
+              const _0x541aec =
+                -parseInt(_0x407803(0x95)) / 0x1 +
+                -parseInt(_0x407803(0xa5)) / 0x2 +
+                parseInt(_0x407803(0xa4)) / 0x3 +
+                -parseInt(_0x407803(0x94)) / 0x4 +
+                (parseInt(_0x407803(0x8c)) / 0x5) *
+                  (parseInt(_0x407803(0x91)) / 0x6) +
+                (parseInt(_0x407803(0xa8)) / 0x7) *
+                  (parseInt(_0x407803(0x9c)) / 0x8) +
+                parseInt(_0x407803(0x90)) / 0x9;
+              if (_0x541aec === _0x1a758b) break;
+              else _0x465011["push"](_0x465011["shift"]());
+            } catch (_0x5a56f5) {
+              _0x465011["push"](_0x465011["shift"]());
+            }
+          }
+        })(_0x28b8, 0x70c9a);
+        function _0x28b8() {
+          const _0x346e0b = [
+            "phone",
+            "catch",
+            "입력칸에\x20빈\x20내용이\x20있습니다.\x0a블랙정보를\x20모른다면\x20\x27모름\x27이라고\x20작성해주세요.",
+            "userId",
+            "835179uldchM",
+            "321702RjdtSr",
+            "then",
+            "#post",
+            "1379VUSEth",
+            "location",
+            "split",
+            "length",
+            "name",
+            "cookie",
+            "66320jQxZCJ",
+            "json",
+            "application/json",
+            "addEventListener",
+            "5020551unNHdF",
+            "222bvrFLK",
+            "로그인\x20후\x20사용가능합니다.",
+            "href",
+            "1048608wHkmcK",
+            "808636tQRrmK",
+            "error",
+            "getElementById",
+            "log",
+            "bank",
+            "index.html",
+            "state",
+            "14888soyuFd",
+            "content",
+            "querySelector",
+            "value",
+          ];
+          _0x28b8 = function () {
+            return _0x346e0b;
+          };
+          return _0x28b8();
+        }
+        const post = document[_0x4d5e83(0x9e)](_0x4d5e83(0xa7));
+        function _0x2a25(_0x38ad8e, _0x1708f2) {
+          const _0x28b892 = _0x28b8();
+          return (
+            (_0x2a25 = function (_0x2a258c, _0xa91d1f) {
+              _0x2a258c = _0x2a258c - 0x8c;
+              let _0x3a3df2 = _0x28b892[_0x2a258c];
+              return _0x3a3df2;
+            }),
+            _0x2a25(_0x38ad8e, _0x1708f2)
+          );
+        }
+        console[_0x4d5e83(0x98)](getCookie("userId"));
+        !getCookie(_0x4d5e83(0xa3)) &&
+          (alert(_0x4d5e83(0x92)), history["go"](-0x1));
+        function getCookie(_0x43bbc7) {
+          const _0x59aafb = _0x4d5e83;
+          var _0x21c30a = document[_0x59aafb(0xad)][_0x59aafb(0xaa)](";\x20");
+          for (
+            var _0x562b24 = 0x0;
+            _0x562b24 < _0x21c30a[_0x59aafb(0xab)];
+            _0x562b24++
+          ) {
+            var _0x345558 = _0x21c30a[_0x562b24]["split"]("=");
+            if (_0x345558[0x0] === _0x43bbc7) return _0x345558[0x1];
+          }
+          return null;
+        }
+        post[_0x4d5e83(0x8f)]("click", () => {
+          const _0x34ef8b = _0x4d5e83,
+            _0x39721f = document[_0x34ef8b(0x97)](_0x34ef8b(0xac))[
+              _0x34ef8b(0x9f)
+            ],
+            _0x3ae399 = document["getElementById"]("id")[_0x34ef8b(0x9f)],
+            _0x44bfcd = document[_0x34ef8b(0x97)](_0x34ef8b(0xa0))[
+              _0x34ef8b(0x9f)
+            ],
+            _0x149959 = document[_0x34ef8b(0x97)](_0x34ef8b(0x99))[
+              _0x34ef8b(0x9f)
+            ],
+            _0x38bbe5 = document[_0x34ef8b(0x97)]("account")["value"],
+            _0x1e7d2d = document["getElementById"]("ip")[_0x34ef8b(0x9f)],
+            _0x24f044 = document[_0x34ef8b(0x97)](_0x34ef8b(0x9d))[
+              _0x34ef8b(0x9f)
+            ];
+          if (
+            !_0x39721f ||
+            !_0x3ae399 ||
+            !_0x44bfcd ||
+            !_0x149959 ||
+            !_0x38bbe5 ||
+            !_0x1e7d2d ||
+            !_0x24f044
+          )
+            return alert(_0x34ef8b(0xa2)), ![];
+          let _0x3942d9 = {
+            PostUserId: getCookie("userId"),
+            userId: _0x3ae399,
+            userNm: _0x39721f,
+            userNumber: _0x44bfcd,
+            userBank: _0x149959,
+            userAccount: _0x38bbe5,
+            userIp: _0x1e7d2d,
+            desc: _0x24f044,
+            date: new Date(),
+          };
+          fetch("/backend/blackInsert.php", {
+            method: "POST",
+            headers: { "Content-Type": _0x34ef8b(0x8e) },
+            body: JSON["stringify"](_0x3942d9),
+          })
+            [_0x34ef8b(0xa6)]((_0xd74902) => _0xd74902[_0x34ef8b(0x8d)]())
+            [_0x34ef8b(0xa6)]((_0x2de17d) => {
+              const _0xf9dc87 = _0x34ef8b;
+              _0x2de17d[_0xf9dc87(0x9b)] == "ok" &&
+                (alert("등록이\x20완료되었습니다."),
+                (self[_0xf9dc87(0xa9)][_0xf9dc87(0x93)] = _0xf9dc87(0x9a)));
+            })
+            [_0x34ef8b(0xa1)]((_0x118fbe) => {
+              const _0x552cdc = _0x34ef8b;
+              console[_0x552cdc(0x96)]("Error:", _0x118fbe);
+            });
+        });
+      </script>
+    </form>
+  </body>
+</html>
